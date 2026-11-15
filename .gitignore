@@ -1,22 +1,28 @@
-# Dependências
+# Dependências do frontend
 node_modules/
 
-# Variáveis de ambiente 
+# Variáveis de ambiente (senhas e chaves: NUNCA vão para o GitHub)
 .env
 .env.*
 !.env.example
 
-# Arquivos gerados no build
+# Java / Maven (arquivos gerados no build)
+target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Build do frontend
 dist/
 build/
 coverage/
 
 # Logs
 *.log
-npm-debug.log*
 
 # Sistema e editores
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+*.iml
